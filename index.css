@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rhodium+Libre&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&family=Yeon+Sung&display=swap');
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #F8EFD3; */
+}
+body, h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd, ol, ul, hr, fieldset, div,
+ section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  list-style: none;
+}
