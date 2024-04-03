@@ -38,6 +38,7 @@
     /* border: 2px solid blue; */
     width: 50%;
     height: 100%;
+    z-index: 2;
 }
 .firstImg > img{
     margin-top: 4rem;
@@ -78,4 +79,5 @@
     right: 5%;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 1;
 }
