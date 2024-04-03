@@ -5,7 +5,6 @@ import IM1 from "../../assets/IM1.jpg"
 import IM2 from "../../assets/IM2.jpg"
 import IM3 from "../../assets/IM3.jpg"
 
-
 function Clicks() {
   return (
     <section className="gallerySection">

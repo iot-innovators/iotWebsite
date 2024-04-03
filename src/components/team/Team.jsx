@@ -3,20 +3,25 @@ import Slider from "react-slick";
 import "./Team.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import fb from "../../assets/fb.png";
-import ig from "../../assets/ig.png";
-import share from "../../assets/share.png";
-import linkedIn from "../../assets/linkedIn.png";
 import { GoDotFill } from "react-icons/go";
 import Marquee from "react-fast-marquee";
+import A from "../../assets/team/Aashish.png"
+import B from "../../assets/team/Biroshan.png"
+import D from "../../assets/team/Dipen.png"
+import Na from "../../assets/team/Naresh.png"
+import Ni from "../../assets/team/Nigma.png"
+import R from "../../assets/team/Radhika.png"
+import S from "../../assets/team/Sanam.png"
 
 function Team() {
   const teamMembers = [
-    fb,
-    ig,
-    share,
-    linkedIn,
-    // Add more image URLs as needed
+    A,
+    B,
+    D,
+    Na,
+    Ni,
+    R,
+    S
   ];
 
   const settings = {
