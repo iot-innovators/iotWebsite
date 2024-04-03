@@ -39,6 +39,11 @@
     width: 50%;
     height: 100%;
 }
+.firstImg > img{
+    margin-top: 4rem;
+    margin-left: 18rem;
+    height: 90%;
+}
 .clickTitle > p > span{
     color: #F6931E;
 }
@@ -48,11 +53,23 @@
     width: 50%;
     height: 100%;
 }
+.secondImg > img{
+    margin-top: 1rem;
+    margin-left: 30rem;
+    left: 0rem;
+    width: inherit;
+}
 
 .thirdImg{
     /* border: 2px solid blue; */
+    
     width: 50%;
     height: 100%;
+}
+.thirdImg > img{
+    margin-top: 4rem;
+    margin-left: 10rem;
+    width: inherit;
 }
 .elUp{
     height: 200px;

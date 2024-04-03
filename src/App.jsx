@@ -5,6 +5,11 @@ import { EventBanner } from './components/eventBanner/EventBanner'
 import { Events } from './components/events/Events'
 import Foot from './components/footer/Foot'
 import Clicks from './components/clicks/Clicks'
+import Contact from './components/contact/Contact'
+import Instapost from './components/instapost/Instapost'
+import About from './components/about/About'
+import Team from './components/team/Team'
+
 function App() {
 
   return (
@@ -14,6 +19,8 @@ function App() {
       <EventBanner/>
       <Events/>
       <Clicks/>
+      <Contact/>
+      <Team/>
       <Foot/>
     </>
   )

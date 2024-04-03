@@ -1,0 +1,104 @@
+.contactSection{
+
+    width: 100%;
+    background-color: #F8EFD3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.allItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 39px;
+    padding: 60px 0;
+}
+.contactTitle{
+    font-size: 120px;
+    color: #265A34;
+    font-family: "Yeon Sung", system-ui;
+    margin-bottom: 100px;
+}
+
+.name, .email, .msg{
+    /* width: 40rem; */
+  border: none;
+  outline: none;
+    border-bottom: 2px solid #265A34;
+    background-color: transparent;
+   
+    width: 378px;
+}
+.msg{
+    padding-bottom: 115px;
+    position: relative;
+
+}
+/*.msg::before{
+    content: "Message";
+    display: block;
+    height: 20px;
+    width: auto;
+    color: black;
+    position: absolute;
+}
+*/
+::placeholder{
+    color: #265A34;
+    font-size: 20px;
+    font-family: "Yeon Sung", system-ui;
+}
+.contactSubmit{
+
+    background-color: #F6931E;
+    height: 56px;
+    width: 108px;
+    color: white;
+    font-size: 25px;
+    /* font-family: "Yeon Sung", system-ui; */
+    font-family: "Roboto", sans-serif;
+    /* padding: 10px 20px; */
+    border: none;
+    /* outline: none; */
+    cursor: pointer;
+    transition: 0.3s;
+    outline: 2px solid #F6931E;
+    outline-offset: 2px ;
+ }
+ .contactSubmit:hover{
+    /* outline: 2px solid #F6931E; */
+    outline-offset: -2px ;
+ }
+ .or{
+    font-family: "Yeon Sung", system-ui;
+ }
+ .contactDetails{
+    /* width:30rem; */
+    height: 2rem;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: #265A34;
+ }
+ .iotEmail > a{
+    text-decoration: none;
+    color: #265A34;
+ }
+ .iotEmail,.iotNumber{
+   display: flex ;
+   align-items: center;
+   gap:8px;
+   
+   
+ }
+
+ .iotEmail{
+    gap: 8px;
+ }
