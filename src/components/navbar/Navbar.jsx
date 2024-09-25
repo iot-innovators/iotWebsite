@@ -1,26 +1,27 @@
 import React from "react";
-import "./Navbar.css"
 import Logo from "../../assets/iotlogo.png"
+import SocialMedia from "../SocialMedia";
+import Menu from "../Menu";
+
 
 function NavBar() {
   return (
-    <header>
-        <nav class="navbar">
-        <ul class="navlist">
-                <li><a href="App.jsx">Home</a></li>
-                <li><a href="Events.jsx">Events</a></li>
-                <li><a href="Gallery.jsx">Gallery</a></li>
-            </ul>
-            {/* <img src={Logo} alt="logo"/> */}
-            <ul class="navlist">
-                <li><a href="About.jsx">About Us</a></li>
-                <li><a href="Contact.jsx">Contact Us</a></li>
-            </ul>
-            <div className="logoDiv">
-            <img src={Logo} alt="logo"/>
-            </div>
-        </nav>
-    </header>
+    
+<header className="sticky backdrop-blur bg-background/40 top-0 z-50">
+  <nav className="flex mx-12 md:mx-24 justify-between h-20 items-center z-10">
+    <div>
+      <img src={Logo} alt="logo" />
+    </div>
+   <div>
+    <Menu/>
+   </div>
+    <div className="hidden">
+      <SocialMedia />
+    </div>
+  </nav>
+</header>
+
+
   );
 }
 
