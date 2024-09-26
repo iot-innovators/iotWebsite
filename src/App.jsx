@@ -15,13 +15,18 @@ function App() {
   return (
     <>
       <NavBar/>
-      <Landing/>
+       {/* <Events/> */}
+        {/* <Landing/>  */}
+      {/* <NavBar/> */}
+      {/* <Landing/> */}
+
+      {/* <Landing/>
       <EventBanner/>
-      <Events/>
+      // <Events/>
       <Clicks/>
       <Contact/>
       <Team/>
-      <Foot/>
+      <Foot/> */}
     </>
   )
 }
