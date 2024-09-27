@@ -9,8 +9,8 @@ const NavBar = () => {
 
   return (
 
-    <header className={`sticky backdrop-blur ${open ? 'bg-white' : 'bg-background/80'}  top-0 z-50 bg-pr`}>
-      <nav className="flex mx-10 md:mx-24 justify-between h-20 items-center z-10">
+    <header className="sticky backdrop-blur  shadow-md top-0 z-50">
+      <nav className="flex px-10 md:px-24 justify-between h-20  items-center z-10">
         <div>
           <img src={Logo} alt="logo" />
         </div>
@@ -20,6 +20,7 @@ const NavBar = () => {
         <div className="hidden md:flex">
           <SocialMedia />
         </div>
+   
       </nav>
     </header>
   );

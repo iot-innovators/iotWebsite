@@ -64,13 +64,16 @@
 }
 @layer base {
   * {
-    @apply border-border;
-    /* background-image: url("./src/assets/background.svg");
-    background-position: center;
-    background-size:cover;  */
+    /* @apply border-border; */
+    /* background-image: url("./src/assets/bg.svg"); */
+    /* background: #675353; */
+    
+  
+    
+
     /* z-index:-20; */
   }
   body {
-    @apply bg-background text-foreground;
+   
   }
 }

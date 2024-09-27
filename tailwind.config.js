@@ -12,9 +12,14 @@ module.exports = {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+		backgroundImage:{
+			bg1: "url('./src/assets/bg.svg')"
+,		},
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
+			
 			pr: '#519f80',
 			pr1: '#75BF43',
 			sr: '#062441',
@@ -58,8 +63,9 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
-  	}
+  		},
+
+  	},
   },
   plugins: [require("tailwindcss-animate")],
 };

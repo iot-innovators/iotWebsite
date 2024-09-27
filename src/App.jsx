@@ -13,10 +13,13 @@ import Team from './components/team/Team'
 function App() {
 
   return (
-    <>
+    <> 
+    <div className='bg-bg1  h-full  bg-cover '>
       <NavBar/>
+      <div className='px-10 md:px-24 '>
+        <Landing/> 
+      </div>
        {/* <Events/> */}
-        {/* <Landing/>  */}
       {/* <NavBar/> */}
       {/* <Landing/> */}
 
@@ -27,6 +30,7 @@ function App() {
       <Contact/>
       <Team/>
       <Foot/> */}
+      </div>
     </>
   )
 }
