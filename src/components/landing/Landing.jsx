@@ -3,7 +3,7 @@ import Bg from "../../assets/iot.png"
 export function Landing() {
     return (
         <>
-            <div className="text-white">
+            <div className="text-white h-[100vh] px-10 md:px-24">
                 <div className="flex justify-center mt-16 ">
                     <div className="border w-max rounded-3xl flex gap-3 px-3 py-2 justify-center">
                         <img src={Bg} width={20} height={1} alt="iot" />

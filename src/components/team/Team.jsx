@@ -1,97 +1,83 @@
 import React from "react";
-import Slider from "react-slick";
-import "./Team.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { GoDotFill } from "react-icons/go";
-import Marquee from "react-fast-marquee";
-import A from "../../assets/team/Aashish.png"
-import B from "../../assets/team/Biroshan.png"
-import D from "../../assets/team/Dipen.png"
-import Na from "../../assets/team/Naresh.png"
-import Ni from "../../assets/team/Nigma.png"
-import R from "../../assets/team/Radhika.png"
-import S from "../../assets/team/Sanam.png"
+import { BsEnvelopeAt, BsInstagram, BsLinkedin } from "react-icons/bs";
 
-function Team() {
-  const teamMembers = [
-    A,
-    B,
-    D,
-    Na,
-    Ni,
-    R,
-    S
-  ];
+import A from "../../assets/team/Aashish.png";
+import B from "../../assets/team/Biroshan.png";
+import D from "../../assets/team/Dipen.png";
+import Na from "../../assets/team/Naresh.png";
+import Ni from "../../assets/team/Nigma.png";
+import R from "../../assets/team/Radhika.png";
+import S from "../../assets/team/Sanam.png";
+import Di from "../../assets/team/Dipesh_Shrestha.png";
 
-  const settings = {
-    infinite: true,
-    speed: 3000,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    arrows: false,
-    dragable: true,
-    pauseOnHover: true,
-    // cssEase: "linear",
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
-  };
-
-  const titleProps = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 0,
-    // centerMode: false,
-    cssEase: "linear",
-    edgeFriction: 0,
-  };
-
+const Team = () => {
   return (
-    <section className="AboutSection">
-   
-   <div className="team-title">
-        <div className="left-bar"></div>
-        <Marquee speed={200} direction="left" className="">
-          <p className="team-title-text">
-            Team Members <span>
-              <GoDotFill className="dot" />Team members
-            </span>
-          </p>
-        </Marquee>
-        <div className="right-bar"></div>
-      </div>
-      <Slider {...settings}>
-        {teamMembers.map((member, index) => (
-          <div key={index} className="team-member">
-            <img src={member} alt={`Team Member ${index + 1}`} />
+    <div className="px-10 md:px-24">
+      <h1 className="flex justify-center font-bold text-4xl text-white mb-10">
+        Meet Our Team
+      </h1>
+
+      <div className="flex justify-center">
+        <div className="flex flex-col items-center gap-2">
+          <img src={Di} alt="Dev_Head" className="h-[180px]  object-cover" />
+          <div className="flex items-center flex-col ">
+            <p className="font-medium">Mr.Dipesh Shrestha</p>
+            <p className="">DevCorps Head</p>
           </div>
-        ))}
-      </Slider>
-      <div className="team-title">
-        <div className="left-bar"></div>
-        <Marquee speed={200} direction="right" className="">
-          <p className="team-title-text">
-            Team Members{" "}
-            <span>
-              <GoDotFill className="dot" />Team members
-            </span>
-          </p>
-        </Marquee>
-        <div className="right-bar"></div>
+
+          <div className="flex gap-3 ">
+            <a
+              href="mailto:dipesh.shrestha@heraldcollege.edu.np"
+              target="_blank"
+            >
+              <BsEnvelopeAt className="text-white hover:text-gray-400 size-4 " />
+            </a>
+            <a
+              href="https://www.instagram.com/username__dipesh.sh/"
+              target="_blank"
+            >
+              <BsInstagram className="text-white size-4 hover:text-gray-400  " />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dipeshshrestha1221/"
+              target="_blank"
+            >
+              <BsLinkedin className="text-white size-4 hover:text-gray-400 " />
+            </a>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-2">
+          <img src={Di} alt="Dev_Head" className="h-[180px]  object-cover" />
+          <div className="flex items-center flex-col ">
+            <p className="font-medium">Mr.Dipesh Shrestha</p>
+            <p className="">DevCorps Head</p>
+          </div>
+
+          <div className="flex gap-3 ">
+            <a
+              href="mailto:dipesh.shrestha@heraldcollege.edu.np"
+              target="_blank"
+            >
+              <BsEnvelopeAt className="text-white hover:text-gray-400 size-4 " />
+            </a>
+            <a
+              href="https://www.instagram.com/username__dipesh.sh/"
+              target="_blank"
+            >
+              <BsInstagram className="text-white size-4 hover:text-gray-400  " />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/dipeshshrestha1221/"
+              target="_blank"
+            >
+              <BsLinkedin className="text-white size-4 hover:text-gray-400 " />
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
+
 export default Team;
