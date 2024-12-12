@@ -17,7 +17,7 @@ const Team = () => {
         Meet Our Team
       </h1>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-20">
         <div className="flex flex-col items-center gap-2">
           <img src={Di} alt="Dev_Head" className="h-[180px]  object-cover" />
           <div className="flex items-center flex-col ">

@@ -1,21 +1,41 @@
-import "./Landing.css"
-import Bg from "../../assets/iot.png"
+import "./Landing.css";
+import groupPhoto from "../../assets/Photo/Group.png";
+import second from "../../assets/Photo/p22.png";
+import first from "../../assets/Photo/Group-3.png";
+import Logo from "../../assets/iotlogo.png";
+
 export function Landing() {
-    return (
-        <>
-            <div className="text-white h-[100vh] px-10 md:px-24">
-                <div className="flex justify-center mt-16 ">
-                    <div className="border w-max rounded-3xl flex gap-3 px-3 py-2 justify-center">
-                        <img src={Bg} width={20} height={1} alt="iot" />
-                        <h3 className="text-lg font-medium" >New: Our IoT  Just landed</h3>
-                    </div>
-                </div>
-                <div className="md:px-20  md:justify-center  ">
-                    <h1 className="text-[70px] text-center font-semibold leading-[90px]">Ignite IoT innovation together with Innovators !</h1>
-                </div>
-            </div>
-        </>
-
-
-    )
+  return (
+    <>
+      <div className="text-white h-[100vh]  pt-20 flex  px-10 md:px-24">
+        <div className="md:px-20  md:justify-center  md:w-[70%] ">
+          <h1 className="md:text-[88px]   font-bold md:leading-[90px] text-[#75BF43] items-center ">
+            Ignite IoT
+          </h1>
+          <h1 className="md:text-[89px]  font-bold md:leading-[90px] items-center ">
+            {" "}
+            Innovation{" "}
+          </h1>
+          <h1 className="md:text-[90px]  font-bold md:leading-[90px] text-[#01264a] items-center ">
+            Together
+          </h1>
+        </div>
+        <div className="relative   h-max hidden  ">
+          <div className=" p-16 hidden ">
+            <img src={groupPhoto} alt="Group" className="border-[8px] md:hidden sm:hidden " />
+            <img
+              src={second}
+              alt="Group"
+              className="border-[8px] absolute top-3 w-[35%] -rotate-12 left-0"
+            />
+            <img
+              src={first}
+              alt="Group"
+              className="border-[8px] absolute  w-[35%]  -rotate-12   bottom-3 right-0"
+            />
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }
