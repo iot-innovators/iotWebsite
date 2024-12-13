@@ -9,8 +9,8 @@ const NavBar = () => {
 
   return (
 
-    <header className="sticky backdrop-blur  shadow-md top-0 z-50">
-      <nav className="flex   px-10 md:px-24 justify-between h-20  items-center z-10">
+    <header className="sticky backdrop-blur-lg shadow-md top-0 z-10">
+      <nav className="flex   px-10 md:px-24 justify-between h-20  items-center z-10 bg-b  ">
         <div>
           <img src={Logo} alt="logo" />
         </div>

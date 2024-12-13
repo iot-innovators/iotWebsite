@@ -20,7 +20,7 @@ const MenuItems = () => (
 );
 
 const WebNav = () => (
-  <div className="shadow-sm shadow-cyan-400 rounded-2xl">
+  <div className="shadow-sm shadow-cyan-400 rounded-2xl bg-[#244E54]  ">
     <ul className="flex gap-8 rounded-3xl px-10 py-2 text-gray-300">
       <li className="hover:text-white">
         <Link to="/home">Home</Link>
