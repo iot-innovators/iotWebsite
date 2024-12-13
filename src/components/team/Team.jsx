@@ -9,6 +9,7 @@ import Ni from "../../assets/team/Nigma.png";
 import R from "../../assets/team/Radhika.png";
 import S from "../../assets/team/Sanam.png";
 import Di from "../../assets/team/Dipesh_Shrestha.png";
+import groupPhoto from "../../assets/Photo/Group.png";
 
 const Team = () => {
   return (
@@ -76,6 +77,8 @@ const Team = () => {
           </div>
         </div>
       </div>
+              <img src={groupPhoto} alt="Group" className="border-[8px]" />
+      
     </div>
   );
 };
