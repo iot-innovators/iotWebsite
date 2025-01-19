@@ -1,45 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rhodium+Libre&family=Yeon+Sung&display=swap');
-.mainEvent{
-    min-height: 85vh;
-    width: 100%;
-    background-color: #D9E3B0;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rhodium+Libre&family=Yeon+Sung&display=swap");
+.mainEvent {
+  min-height: 85vh;
+  width: 100%;
+  background-color: #d9e3b0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.eachEvent{
-    width: 90%;
-    height: 90vh;
-    /* border: 2px solid black; */
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    color: #062441;
+.eachEvent {
+  width: 90%;
+  height: 90vh;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  color: #062441;
 }
-.eventPhoto{
-    /* border: 2px solid red; */
-    border-radius: 40px;
-    width: 100%;
-    min-height: 60vh;
-    margin-bottom: 2rem;
-    position: relative;
-    overflow: hidden;
+.eventPhoto {
+  /* border: 2px solid red; */
+  border-radius: 40px;
+  width: 100%;
+  min-height: 60vh;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
 }
-.actPhot{
-    width: 100%;
-    height: auto;
-    transform: translateY(-20%);
+.actPhot {
+  width: 100%;
+  height: auto;
+  transform: translateY(-20%);
 }
-.eventTitle{
-    font-size: 50px;
-    color: #062441;
-    font-family: "Yeon Sung", system-ui;
+.eventTitle {
+  font-size: 50px;
+  color: #062441;
+  font-family: "Yeon Sung", system-ui;
+}
+.eventDesp {
+  font-family: "Rhodium Libre", serif;
+  font-size: 20px;
+  line-height: 20px;
+}
 
+.eventClicks h1 {
+  position: relative;
 }
-.eventDesp{
-    font-family: "Rhodium Libre", serif;
-    font-size: 20px;
-    line-height: 20px;
+
+.eventClicks h1::before {
+  content: "";
+  position: absolute;
+  left: 13;
+  height: 3px;
+  bottom: -3px;
+  width: 0;
+  background-color: lightgreen;
+  transition: all 0.3s ease-in-out;
+}
+
+.eventClicks h1:hover::before {
+  left: 43.5%;
+  width: 13%;
+}
+
+.collegeEvents h1 {
+  position: relative;
+}
+
+.collegeEvents h1::before {
+  content: "";
+  position: absolute;
+  left: 13;
+  height: 3px;
+  bottom: -3px;
+  width: 0;
+  background-color: lightgreen;
+  transition: all 0.3s ease-in-out;
+}
+
+.collegeEvents h1:hover::before {
+  left: 46%;
+  width: 8%;
 }

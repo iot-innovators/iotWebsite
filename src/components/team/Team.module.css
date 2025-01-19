@@ -1,0 +1,18 @@
+.meetTeam h1 {
+  position: relative;
+}
+
+.meetTeam h1::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  left: 20;
+  height: 3px;
+  bottom: -5px;
+  background-color: lightgreen;
+  transition: all 0.5s;
+}
+
+.meetTeam h1:hover::before {
+  width: 19%;
+}

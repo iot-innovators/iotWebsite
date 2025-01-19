@@ -1,0 +1,19 @@
+.department h1 {
+  position: relative;
+}
+
+.department h1::before {
+  content: "";
+  position: absolute;
+  left: 20;
+  height: 3px;
+  width: 0;
+  bottom: -4px;
+  background-color: lightgreen;
+  transition: all 0.5s ease-in-out;
+}
+
+.department h1:hover::before {
+  left: 42.5%;
+  width: 15%;
+}

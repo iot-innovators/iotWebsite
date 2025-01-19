@@ -14,16 +14,14 @@ module.exports = {
       },
       backgroundImage: {
         bg1: "url('./src/assets/bg.svg')",
-		g11: 'radial-gradient(circle at 3px 3px, #fff 3px, transparent 0)',
+        g11: "radial-gradient(circle at 3px 3px, #fff 3px, transparent 0)",
       },
-      
       backgroundSize: {
         "dot-spacing": "30px 30px",
       },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-
         pr: "#519f80",
         pr1: "#75BF43",
         sr: "#062441",
@@ -51,7 +49,6 @@ module.exports = {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",

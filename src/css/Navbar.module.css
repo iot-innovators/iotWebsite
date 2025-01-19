@@ -1,0 +1,18 @@
+.navLists li {
+  position: relative;
+}
+
+.navLists li::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: lightgreen;
+  transition: all 0.7s;
+}
+
+.navLists li:hover::before {
+  width: 100%;
+}

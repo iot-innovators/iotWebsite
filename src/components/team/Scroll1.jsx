@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import './style.css';
 
 const Scroll1 = () => {
   const [count, setCount] = useState(0);
@@ -24,7 +23,8 @@ const Scroll1 = () => {
     if (hasScrolled) {
       let i = 1; // Start from 1
       intervalId = setInterval(() => {
-        if (i <= 13) { // Stop after reaching 13
+        if (i <= 13) {
+          // Stop after reaching 13
           setCount(i);
           i++;
         } else {

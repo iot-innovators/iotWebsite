@@ -1,13 +1,13 @@
 import React from "react";
 import R from "../../assets/team/Radhika.png";
 
-import A from "../../assets/team/Aashish.png";
-import B from "../../assets/team/Biroshan.png";
-import D from "../../assets/team/Dipen.png";
-import Na from "../../assets/team/Naresh.png";
+// import A from "../../assets/team/Aashish.png";
+// import B from "../../assets/team/Biroshan.png";
+// import D from "../../assets/team/Dipen.png";
+// import Na from "../../assets/team/Naresh.png";
 import Ni from "../../assets/team/Nigma.png";
-import S from "../../assets/team/Sanam.png";
-import Di from "../../assets/team/Dipesh_Shrestha.png";
+// import S from "../../assets/team/Sanam.png";
+// import Di from "../../assets/team/Dipesh_Shrestha.png";
 
 import { BsEnvelopeAt, BsInstagram, BsLinkedin } from "react-icons/bs";
 
