@@ -14,7 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         bg1: "url('./src/assets/bg.svg')",
-        g11: "radial-gradient(circle at 3px 3px, #fff 3px, transparent 0)",
+        g11: "radial-gradient(circle at 3px 3px, #102D4A 3px, transparent 0)",
       },
       backgroundSize: {
         "dot-spacing": "30px 30px",

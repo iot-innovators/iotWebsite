@@ -6,7 +6,7 @@ import "./Events.css";
 
 const CollegeEvents = () => {
   return (
-    <div>
+    <div className="">
       <div className="collegeEvents">
         <h1 className="text-center font-bold text-4xl cursor-pointer">
           Events
@@ -18,7 +18,7 @@ const CollegeEvents = () => {
               className="px-7 w-96 shadow-md py-5 hover:shadow-2xl cursor-pointer transition-all ease-in-out duration-300"
             >
               <h3 className="text-center font-bold text-xl">{e.name}</h3>
-              <p className="text-gray-400 text-center text-sm m-2">
+              <p className="text-[#302f2f] text-center text-sm m-2">
                 {e.slogan}
               </p>
               <img className="rounded" src={e.poster} />

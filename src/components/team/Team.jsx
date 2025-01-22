@@ -19,7 +19,7 @@ import Mohammed from "../../assets/team/Mohammad_Rashid_Siddiqui.jpeg";
 import Bibisha from "../../assets/team/Bibisha_sapkota.jpg";
 import Nizz from "../../assets/team/Nizz.jpg";
 import Tul from "../../assets/team/Tul.png";
-
+import Bipul from "../../assets/team/Bipul.png";
 import styles from "../team/Team.module.css";
 
 const Team = () => {
@@ -115,15 +115,15 @@ const Team = () => {
       role: "Member",
       src: Bibisha,
     },
-    {
-      name: "Satyam Singh",
-      role: "Member",
-      src: "",
-    },
+    // {
+    //   name: "Satyam Singh",
+    //   role: "Member",
+    //   src: "",
+    // },
     {
       name: "Bipul Regmi",
       role: "Member",
-      src: "",
+      src: Bipul,
     },
   ];
 
@@ -131,15 +131,16 @@ const Team = () => {
     <div className="px-10 md:px-24 mt-5 " id="team">
       <div className={styles.meetTeam}>
         <h1
-          className={`flex justify-center flex-col md:flex-row items-center font-bold  text-4xl text-black mb-10 cursor-pointer`}
+          className={`flex justify-center flex-col md:flex-row items-center text-center font-bold  text-4xl text-black mb-10 cursor-pointer`}
         >
           Meet Our Team
         </h1>
       </div>
 
-      <div className="flex flex-col flex-wrap mb-20">
+
+      <div className="flex flex-col flex-wrap ">
         {/* Head */}
-        <h1 className="text-center font-bold text-2xl mt-10 mb-5">Mentors</h1>
+        <h1 className="text-center font-bold text-2xl m  mb-10">Mentors</h1>
         <div className="mb-2 flex items-center flex-wrap justify-center gap-20">
           {MentorAndHead.map((m, i) => (
             <div
@@ -221,7 +222,9 @@ const Team = () => {
           ))}
         </div>
       </div>
+      
     </div>
+    
   );
 };
 

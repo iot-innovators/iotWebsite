@@ -1,67 +1,32 @@
 import React from "react";
-import "./Contact.css";
-import { LuPhoneCall } from "react-icons/lu";
-import { CiMail } from "react-icons/ci";
 
-function Contact() {
-  const [result, setResult] = React.useState("");
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "0a2ee655-9bcb-4047-b801-f5bae441d321");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Thank you! Your email has been submitted. We'll try to reach out asap...");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
-  };
-
-
+const ContactPage = () => {
   return (
-    <section className="contactSection">
-      <div className="allItems">
-        <p className="contactTitle">
-          Contact Us
+    <div className="py-36 bg-gray-100 flex flex-col items-center justify-center p">
+      <div className="max-w-md w-full bg-white shadow-md rounded-lg p-8">
+        <h1 className="text-2xl font-bold text-gray-800 mb-4 text-center">Contact Us</h1>
+        <p className="text-gray-600 text-center mb-6">
+          We would love to hear from you. Feel free to reach out!
         </p>
-        <form className="contactForm" onSubmit={onSubmit}>
-        <input name="name" type="text" className="name" placeholder="Name"/>
-        <input name="email" type="email" className="email" placeholder="Email" />
-        <textarea name="message" className="msg" placeholder="Message"></textarea>
-        {/* <input type="textarea" className="msg" placeholder="Message"/> */}
-        <button className="contactSubmit" type="submit">Submit</button>
-        </form>
-        <span className="result">{result}</span>
-        <p className="or">or</p>
-        <div className="contactDetails">
-          <div className="iotNumber">
-            <LuPhoneCall className="phoneIcon" />
-            9824420893
+        <div className="space-y-4">
+          <div>
+            <h2 className="text-lg font-semibold text-gray-700">Address:</h2>
+            <p className="text-gray-600">Bhagwati Bahal Road, Naxal, Kathmandu</p>
           </div>
-          <div className="iotEmail">
-            <CiMail className="mailIcon" />
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlFCnhfwdVNfkFhXWKPLkKFxcJNCfSlLNvNGdwbKFBVBkvZMNJlKJkrfxbCvwZgLfjkFVq" target="_blank">
-
-            iotinnovators@heraldcollege.edu.np
+          <div>
+            <h2 className="text-lg font-semibold text-gray-700">Email:</h2>
+            <a
+              href="mailto:iot.innovators@heraldcollege.edu.np"
+              className="text-blue-500 hover:underline"
+            >
+              iot.innovators@heraldcollege.edu.np
             </a>
           </div>
         </div>
+       
       </div>
-    </section>
-
+    </div>
   );
-}
+};
 
-export default Contact;
+export default ContactPage;

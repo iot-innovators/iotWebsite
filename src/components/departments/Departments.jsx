@@ -65,7 +65,7 @@ const Dep = [
 const Departments = () => {
   return (
     <>
-      <div className={`${styles.department}  mt-10 `}>
+      <div className={`${styles.department}  mt-10  md:px-10 `}>
         <h1 className="flex justify-center font-bold text-4xl text-black cursor-pointer">
           Departments
         </h1>

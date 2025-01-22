@@ -5,17 +5,17 @@ import styles from "./About.module.css";
 
 function About() {
   return (
-    <div className="">
+    <div className="px-5 md:px-16">
       <div className={`${styles.about} cursor-pointer`}>
-        <h1 className="text-center mb-12 font-bold text-4xl">About Us</h1>
+        <h1 className="text-center mb-12 font-bold text-4xl sm:text-3xl">About Us</h1>
       </div>
-      <div className="flex justify-between px-12 mb-5">
-        <div className="flex items-center gap-4 text-center justify-center">
-          <img src={Logo} alt="logo" className="w-72 h-50" />
-          <div className="border border-gray-400 h-52"></div>
-          <img src={devCorps} alt="logo" className="w-72 h-50" />
+      <div className="flex flex-col md:flex-row justify-between px-4 sm:px-6  mb-5">
+        <div className="flex flex-col lg:flex-row items-center gap-4 text-center justify-center mb-6 md:mb-0">
+          <img src={Logo} alt="logo" className="w-40  sm:w-60" />
+          <div className=" md:block border border-gray-400  hidden  md:w-full  "></div>
+          <img src={devCorps} alt="logo" className="w-40 sm:w-60 " />
         </div>
-        <p className="w-1/2 leading-8 text-[18px]">
+        <p className="w-full md:w-1/2 leading-8 text-[16px] sm:text-[18px] text-justify">
           The IOT community is a vibrant and supportive platform for students
           and enthusiasts interested in embedded systems and related fields. Our
           goal is to bring together gemlike-minded individuals from diverse
@@ -28,7 +28,7 @@ function About() {
           make a significant impact in the field of IoT.
         </p>
       </div>
-      <hr className=" mt-10 mb-5" />
+      <hr className="mt-10 mb-5" />
     </div>
   );
 }

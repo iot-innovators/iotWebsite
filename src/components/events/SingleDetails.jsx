@@ -18,7 +18,8 @@ const SingleDetails = () => {
         <div className="flex justify-center mt-5 mb-5">
           <img className="rounded w-1/2" src={data.poster} />
         </div>
-        <p className="text-center m-2 w-full mt-6">{data.description}</p>
+
+        <p className=" w-[80%]  m-2 justify-self-center   mt-6">{data.description}</p>
       </div>
     </div>
   );
